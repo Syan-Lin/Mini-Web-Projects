@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: rgb(236, 236, 236);
+    display: block;
+    height: 100vh;/*vh为占据所有屏幕空间的百分比*/
+    /*如果此时用%，那么空间大小实际上由其子元素的大小决定*/
+    overflow: hidden;/*对于超出容器的内容不显示，可以隐藏滚轮*/
+}
+
+.container {
+    display: flex;/*子元素在一行中排列*/
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;/*保持纵横比，缩放至适合容器大小*/
+    border-radius: 10vh;
+    height: 90%;
+    color: #fff;/*字体颜色*/
+    flex: 1;/*每个成员占一份空间*/
+    margin: 10px;
+    cursor: pointer;
+    position: relative;/*对card没影响，实际上是为了提供给h3用于定位*/
+    transition: all 1s ease-in-out;
+}
+
+.card img {
+    opacity: 0;
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.card.active img {
+    display: inline;
+    height: 100%;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 30px;
+    position: absolute;/*寻找除position:static(默认)以外的第一个父元素为基点*/
+    bottom: 0px;
+    left: 35px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+/*链接的选择器，选择同时包含类card和active的元素*/
+.card.active {
+    flex: 5;
+}
+
+.card.active h3{
+    opacity: 1;
+    /*作用属性|过渡时间|过渡曲线|开始时间*/
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+#title {
+    text-align: center;
+    padding-top: 5vh;
+}
