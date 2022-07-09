@@ -1,5 +1,7 @@
+/* 导入字体 */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+/* 使用border-box方式计算元素大小，便于控制元素大小 */
 * {
     box-sizing: border-box;
 }
@@ -7,68 +9,71 @@
 body {
     font-family: 'Muli', sans-serif;
     background-color: rgb(236, 236, 236);
-    display: block;
-    height: 100vh;/*vh为占据所有屏幕空间的百分比*/
-    /*如果此时用%，那么空间大小实际上由其子元素的大小决定*/
-    overflow: hidden;/*对于超出容器的内容不显示，可以隐藏滚轮*/
-}
-
-.container {
-    display: flex;/*子元素在一行中排列*/
-    width: 80%;
-    height: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;/*保持纵横比，缩放至适合容器大小*/
-    border-radius: 10vh;
-    height: 90%;
-    color: #fff;/*字体颜色*/
-    flex: 1;/*每个成员占一份空间*/
-    margin: 10px;
-    cursor: pointer;
-    position: relative;/*对card没影响，实际上是为了提供给h3用于定位*/
-    transition: all 1s ease-in-out;
-}
-
-.card img {
-    opacity: 0;
-    display: none;
-    height: 100%;
-    width: 100%;
-}
-
-.card.active img {
-    display: inline;
-    height: 100%;
-    width: 100%;
-}
-
-.card h3 {
-    font-size: 30px;
-    position: absolute;/*寻找除position:static(默认)以外的第一个父元素为基点*/
-    bottom: 0px;
-    left: 35px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-}
-
-/*链接的选择器，选择同时包含类card和active的元素*/
-.card.active {
-    flex: 5;
-}
-
-.card.active h3{
-    opacity: 1;
-    /*作用属性|过渡时间|过渡曲线|开始时间*/
-    transition: opacity 0.3s ease-in 0.4s;
+    height: 95vh;       /* 关于单位vh，自行百度 */
 }
 
 #title {
     text-align: center;
     padding-top: 5vh;
+}
+
+.container {
+    display: flex;      /* 弹性容器，影响子元素排列 */
+    width: 80%;
+    height: 80%;
+    /* 常用方法，使元素居中 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 缩略卡片 */
+.card {
+    /* 图片 */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 10vh;
+    height: 90%;
+    color: #fff;        /* 字体颜色 */
+    flex: 1;            /* 占一份空间 */
+    margin: 10px;       /* 不指定方向，设置四个方向 */
+    cursor: pointer;
+    position: relative; /* 本例中对card没影响，实际上是为了提供给h3用于定位 */
+    transition: all 1s ease-in-out;
+}
+
+/* 展开卡片 */
+.card.active {
+    flex: 5;            /* 展开后占五份空间 */
+}
+
+.card h3 {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute; /* 寻找第一个position非static的父元素为基点进行定位 */
+
+    /* position: absolute时用于调整位置 */
+    bottom: 0vh;
+    left: 3vw;
+
+    transition: opacity 0.3s ease-in;
+}
+
+.card.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* 展开大图的超链接，div本身就有监听事件
+   需要加一层看不见的图片实现二次点击   */
+.card img {
+    opacity: 0;
+    display: none;      /* 默认关闭，没有点击事件 */
+    height: 100%;
+    width: 100%;
+}
+
+.card.active img {
+    display: inline;    /* 可以点击 */
 }
