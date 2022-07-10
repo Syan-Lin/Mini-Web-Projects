@@ -18,11 +18,11 @@
 学习从模仿开始，运用自己所学，做一些酷炫的效果吧！
 
 ## 项目列表
-在线预览功能暂未开放！
 
 | #   | 项目            | 在线预览 |
 | --- | --------------- | -------- |
-| 01  | [Expanding Cards](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/1.%20Expanding%20Cards) | [在线预览](https://github.com/Syan-Lin/Mini-Web-Projects) |
+| 01  | [Expanding Cards](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/1.%20Expanding%20Cards) | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/1.%20Expanding%20Cards/) |
+| 02  | [Progress Steps](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/2.%20Progress%20Steps)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/2.%20Progress%20Steps/) |
 
 ## 关于贡献
 由于本人水平有限，项目中难免会有错误，你的勘误对我来说是很大的帮助，是大家一起成长的好方法。
