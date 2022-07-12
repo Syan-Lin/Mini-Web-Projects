@@ -1,5 +1,5 @@
 # Mini-Web-Projects
-![](https://img.shields.io/badge/Projects-1-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
+![](https://img.shields.io/badge/Projects-3-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
 
 带有中文注释的迷你 Web 项目练习，一起来学前端吧！
 
@@ -23,6 +23,7 @@
 | --- | --------------- | -------- |
 | 01  | [Expanding Cards](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/1.%20Expanding%20Cards) | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/1.%20Expanding%20Cards/) |
 | 02  | [Progress Steps](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/2.%20Progress%20Steps)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/2.%20Progress%20Steps/) |
+| 03  | [Hide Side Navigation](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/3.%20Hide%20Side%20Navigation)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/3.%20Hide%20Side%20Navigation/) |
 
 ## 关于贡献
 由于本人水平有限，项目中难免会有错误，你的勘误对我来说是很大的帮助，是大家一起成长的好方法。

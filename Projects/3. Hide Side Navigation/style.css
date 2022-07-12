@@ -1,0 +1,131 @@
+/* 导入字体 */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* 使用border-box方式计算元素大小，便于控制元素大小 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.container {
+    width: 100vw;
+    padding: 50px;
+}
+
+/* 左上角按钮底板 */
+.navBtn {
+    /* 在左上角定位 */
+    position: fixed;
+    top: -100px;
+    left: -100px;
+
+    /* 圆形形状 */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    background-color: #ff7979;
+    z-index: 2;     /* 显示在sidebar上面 */
+}
+
+/* 左上角按钮样式 */
+.navBtn button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;        /* 设置图标颜色 */
+    visibility: hidden; /* 默认隐藏 */
+
+    /* 定位，调整到合适的位置 */
+    position: absolute;
+	left: 70%;
+	bottom: 30%;
+	transform: translate(-50%, 50%);
+}
+
+/* 拥有show类的按钮才会显示 */
+.show#open, .show#close {
+    visibility: visible;
+}
+
+/* 文章容器 */
+.content {
+    max-width: 1000px;
+    /* 居中 */
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: padding 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 当空间页面足够大时(>1200px)可以直接对容器进行移动 */
+@media (min-width: 1200px) {
+    .content.show {
+        transform: translateX(100px);
+    }
+}
+/* 当空间页面不够大时(<1200px)需要压缩容器 */
+@media (max-width: 1200px) {
+    .content.show {
+        padding-left: 100px;
+    }
+}
+
+/* 侧边栏 */
+.sidebar {
+    /* 定位至左边 */
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 100vh;
+    width: 100px;
+    z-index: 1;     /* 显示在正常版面上面 */
+    background-color: #222;
+    padding-top: 100px;
+
+    /* 默认隐藏 */
+    margin-left: -100px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 展示侧面板 */
+.sidebar.show {
+    transform: translateX(100%);
+}
+
+/* 侧栏按钮样式 */
+.menu {
+    list-style-type: none;
+    margin-left: -20px;
+
+    color: #fff;
+}
+
+.menu i {
+    margin-right: 10px;
+}
+
+.menu li {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+}
+
+small {
+    font-style: italic;
+    color: #555;
+}
