@@ -1,5 +1,5 @@
 # Mini-Web-Projects
-![](https://img.shields.io/badge/Projects-1-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
+![](https://img.shields.io/badge/Projects-2-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
 
 带有中文注释的迷你 Web 项目练习，一起来学前端吧！
 
