@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* 声明全局变量 */
+:root {
+    --input-width: 150px;
+    --search-bar-height: 40px;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: rgb(236, 236, 236);
+    height: 95vh;
+}
+
+#title {
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.container {
+    width: 100vw;
+    margin-top: 200px;
+    /* 水平居中 */
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar {
+    position: relative; /* 提供给btn定位 */
+
+    /* 因为btn定位是absolute，不参与居中关于距
+       离的计算，为了居中需要偏移一个btn的长度 */
+    margin-right: var(--search-bar-height);
+}
+
+/* 输入框 */
+.input {
+    background-color: white;
+    padding-left: 10px;
+    height: var(--search-bar-height);
+    width: 0px;     /* 折叠状态长度为0 */
+    border: none;
+    outline: none;
+
+    transition: width 0.5s ease-in-out;
+}
+
+.input.focus {
+    width: var(--input-width);
+}
+
+.btn {
+    border: none;
+    height: var(--search-bar-height);
+    width: var(--search-bar-height);
+    background-color: white;
+    cursor: pointer;
+
+    /* 定位在右边 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+}
