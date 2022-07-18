@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    /* 水平居中 */
+    display: flex;
+    justify-content: center;
+}
+
+/* 本项目中单位均使用vw或vh，这样在不同缩放或分辨率下都能保持正常显示 */
+
+/* 左半部分 */
+.splitleft {
+    position: relative;     /* 提供给按钮和文字进行定位 */
+    width: 50%;
+    height: 100%;
+    flex: 1;                /* 占一份空间 */
+
+    /* 背景图设置 */
+    background: url('left.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: flex 1s ease-in-out;
+}
+
+/* 右半部分 */
+.splitright {
+    position: relative;     /* 提供给按钮和文字进行定位 */
+    width: 50%;
+    height: 100%;
+    flex: 1;                /* 占一份空间 */
+
+    /* 背景图设置 */
+    background: url('right.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: flex 1s ease-in-out;
+}
+
+/* 在原图的基础上蒙上一层 */
+.splitleft:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    transition: background-color 1s ease-in-out;
+}
+.splitright:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    transition: background-color 1s ease-in-out;
+}
+
+/* 鼠标移入时 */
+.splitleft:hover {
+    flex: 3;    /* 占三份空间，此时另一部分只占一份，所以占有空间比 3:1 */
+    transition: flex 1.5s ease-in-out;
+}
+.splitright:hover {
+    flex: 3;    /* 占三份空间，此时另一部分只占一份，所以占有空间比 3:1 */
+    transition: flex 1.5s ease-in-out;
+}
+.splitleft:hover:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+.splitright:hover:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn {
+    /* 调整位置，居中 */
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* 按钮文字居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15vw;
+    height: 5vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #fff;
+    border: #fff solid 0.2vw;
+    cursor: pointer;
+}
+
+/* .splitleft和.btn间有空格，不可省略
+   此选择器的含义是选择splitleft类下的btn类 */
+.splitleft .btn:hover {
+    background-color: rgb(65, 171, 171);
+}
+.splitright .btn:hover {
+    background-color: rgb(64, 193, 107);
+}
+
+h1 {
+    /* 调整位置，居中 */
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 3vw;
+    color: #fff;
+    text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.3);
+}
