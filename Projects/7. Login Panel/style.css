@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* 声明全局变量 */
+:root {
+    --input-width: 150px;
+    --search-bar-height: 40px;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #71afe5;
+    height: 95vh;
+}
+
+#title {
+    color: #fff;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.container {
+    width: 100%;
+    margin-top: 50px;
+    /* 水平居中 */
+    display: flex;
+    justify-content: center;
+}
+
+/* login面板，其大小由子元素确定 */
+.loginpanel {
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #002d505f;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+}
+
+.inputline {
+    position: relative;     /* 对inputline没有影响，提供给label定位 */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;           /* 影响login面板的大小 */
+}
+
+.inputline input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1rem;
+    color: #fff;
+    outline: 0;
+}
+
+.inputline label {
+    /* 定位 */
+    position: absolute;
+    top: 15px;
+    left: 0;
+
+    color: #fff;
+    pointer-events: none;
+    font-size: 1.2rem;
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* 此选择器的含义是类inputline下的input满足focus
+   或valid条件时，设置input后的第一个label元素样式 */
+.inputline input:focus + label,
+.inputline input:valid + label {
+  color: #7ed6df;
+  transform: translateY(-30px);
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100%;
+    background-color: #c7e0f4;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+
+.loginpanel a {
+    text-decoration: none;
+    color: #c7e0f4;
+}
+
+.loginpanel p {
+    color: #fff;
+}
