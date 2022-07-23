@@ -1,5 +1,5 @@
 # Mini-Web-Projects
-![](https://img.shields.io/badge/Projects-7-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
+![](https://img.shields.io/badge/Projects-8-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
 
 带有中文注释的迷你 Web 项目练习，一起来学前端吧！
 
@@ -28,6 +28,7 @@
 | 05  | [Animation In Scroll](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/5.%20Animation%20In%20Scroll)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/5.%20Animation%20In%20Scroll/) |
 | 06  | [Split Landing Page](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/6.%20Split%20Landing%20Page)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/6.%20Split%20Landing%20Page/) |
 | 07  | [Login Panel](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/7.%20Login%20Panel)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/7.%20Login%20Panel/) |
+| 08  | [Login Panel](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/8.%20Asynchronous%20Function)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/8.%20Asynchronous%20Function/) |
 
 ## 关于贡献
 由于本人水平有限，项目中难免会有错误，你的勘误对我来说是很大的帮助，是大家一起成长的好方法。
