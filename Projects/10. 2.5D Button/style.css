@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #fcc419;
+    height: 100%;
+}
+
+#title {
+    text-align: center;
+    color: #183153;
+    padding-top: 5vh;
+}
+
+.container {
+    width: 800px;
+    height: 100%;
+    padding: 10px 0;
+    margin: 100px auto;
+    background-color: #fff9db;
+    border-radius: 20px;
+
+    /* 2.5D 核心样式 */
+    border: 4px solid #183153;
+    box-shadow: 0 10px 0px #183153;
+
+    /* 子元素水平垂直居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    padding: 15px 50px;
+    margin: 0 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #183153;
+    background-color: #ffd43b;
+    cursor: pointer;
+
+    /* 2.5D 核心样式 */
+    border: 2px solid #183153;
+    box-shadow: 0 5px 0 #183153;
+
+    /* Q弹手感 */
+    transition: all 0.05s ease;
+}
+.btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+
+    transition: all 0.05s ease;
+}
+
+.btn:hover {
+    background-color:#fab005;
+}
+
+.btn-container {
+    margin: 20px 0;
+}
+
+.text-container {
+    padding: 0 80px;
+    width: 100%;
+}
+
+h2 {
+    color: #183153;
+}
+
+p {
+    margin: 5px 0;
+}
