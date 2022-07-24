@@ -29,7 +29,7 @@
 | 06  | [Split Landing Page](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/6.%20Split%20Landing%20Page)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/6.%20Split%20Landing%20Page/) |
 | 07  | [Login Panel](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/7.%20Login%20Panel)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/7.%20Login%20Panel/) |
 | 08  | [Asynchronous Function](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/8.%20Asynchronous%20Function)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/8.%20Asynchronous%20Function/) |
-| 09  | [Collapsed Card](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/9.%20Collapsed%20Card)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/9.%20Collapsed%Card/) |
+| 09  | [Collapsed Card](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/9.%20Collapsed%20Card)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/9.%20Collapsed%20Card/) |
 | 10  | [2.5D Button](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/10.%202.5D%20Button)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/10.%202.5D%20Button/) |
 
 ## 关于贡献
