@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: rgb(236, 236, 236);
+    height: 95vh;
+}
+
+#title {
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.container {
+    width: 100%;
+    /* 子元素按列排，水平居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =====默认样式===== */
+.box {
+    width: 600px;
+    height: 100%;
+    position: relative;     /* 提供给button定位 */
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 10px 0;
+
+    /* 子元素按列排 */
+    display: flex;
+    flex-direction: column;
+
+    transition: box-shadow 0.3s ease-out;
+}
+
+.btn {
+    /* 定位 */
+    position: absolute;
+    right: 20px;
+    top: 35px;
+
+    border: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.fa-times {
+    /* 隐藏图标X */
+    display: none;
+}
+
+.text {
+    display: none;
+}
+
+.title {
+    color: #343a40;
+    width: 95%;
+}
+
+/* =====激活样式===== */
+.box.active {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease-out;
+}
+
+.box.active .text {
+    display: inline;
+}
+
+.box.active .fa-times {
+    display: inline;
+}
+
+.box.active .fa-chevron-down {
+    display: none;
+}
