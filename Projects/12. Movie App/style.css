@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* 声明全局变量 */
+:root {
+    --theme-color-dark: #22254b;
+    --theme-color-light: #373b69;
+    --header-height: 100px;
+}
+
+body {
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    background-color: var(--theme-color-dark);
+    margin: 0;
+
+    /* 子元素按列排 */
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    line-height: var(--header-height);
+    margin: 0;
+}
+
+.header {
+    background-color: var(--theme-color-light);
+    height: var(--header-height);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.3);
+}
+
+.container {
+    /* 子元素按行排 */
+    display: flex;
+    flex-wrap: wrap;        /* 排不下自动换行 */
+    flex-direction: row;
+
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+.card {
+    /* 子元素按列排，水平居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative; /* 提供给intro定位 */
+
+    width: 300px;
+    background-color: var(--theme-color-light);
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin: 0 20px 40px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 450px;
+    min-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.info {
+    /* 子元素按行排，垂直居中 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative; /* 提供给score定位 */
+    padding: 0 70px;
+    width: 100%;
+    height: 100%;
+}
+
+.info .name {
+    width: 100%;
+    text-align: center;
+}
+
+.info .score {
+    /* 基于info容器定位 */
+    position: absolute;
+    right: 20px;
+
+    color: #f39c12;
+    text-align: center;
+    background-color: var(--theme-color-dark);
+    height: 30px;
+    line-height: 30px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.intro {
+    /* 基于card容器定位 */
+    position: absolute;
+    bottom: 0;
+
+    color: black;
+    padding: 20px;
+    z-index: 1;     /* 显示在其他元素上方 */
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
+
+    transform: translateY(100%);    /* 默认隐藏 */
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro.hover {
+    transform: translateY(0%);
+    transition: transform 0.5s ease-in-out;
+}

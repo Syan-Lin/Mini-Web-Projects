@@ -1,5 +1,5 @@
 # Mini-Web-Projects
-![](https://img.shields.io/badge/Projects-11-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
+![](https://img.shields.io/badge/Projects-12-blue?style=for-the-badge) ![](https://img.shields.io/badge/Difficulty-Beginner-green?style=for-the-badge) ![](https://img.shields.io/badge/Powered%20By-Interest-orange?style=for-the-badge)
 
 带有中文注释的迷你 Web 项目练习，一起来学前端吧！
 
@@ -32,6 +32,7 @@
 | 09  | [Collapsed Card](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/9.%20Collapsed%20Card)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/9.%20Collapsed%20Card/) |
 | 10  | [2.5D Button](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/10.%202.5D%20Button)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/10.%202.5D%20Button/) |
 | 11  | [Increasing Number](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/11.%20Increasing%20Number)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/11.%20Increasing%20Number/) |
+| 12  | [Movie App](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/12.%20Movie%20App)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/12.%20Movie%20App/) |
 
 ## 关于
 由于本人水平有限，项目中难免会有错误，你的勘误对我来说是很大的帮助，是大家一起成长的好方法。
