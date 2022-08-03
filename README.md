@@ -35,6 +35,6 @@
 | 12  | [Movie App](https://github.com/Syan-Lin/Mini-Web-Projects/tree/main/Projects/12.%20Movie%20App)   | [在线预览](https://syan-lin.github.io/Mini-Web-Projects/Projects/12.%20Movie%20App/) |
 
 ## 关于
-由于本人水平有限，项目中难免会有错误，你的勘误对我来说是很大的帮助，是大家一起成长的好方法。
+由于本人水平有限，项目中难免会有错误，你的勘误对我来说是很大的帮助。
 
 如果你有好的，适合新手的项目，也欢迎添加至本仓库。
